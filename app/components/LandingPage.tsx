@@ -474,7 +474,7 @@ export default function LandingPage({ onStartSurvey }: LandingPageProps) {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <CircleCheckBig className="size-5 text-green-600 flex-shrink-0" />
-                <p className="text-gray-700">주말 2일 집중 과정 (토요일, 일요일 10:00-18:00)</p>
+                <p className="text-gray-700">주말 2일 집중 과정 (토요일, 일요일 10:00-22:00)</p>
               </div>
               <div className="flex items-center gap-3">
                 <CircleCheckBig className="size-5 text-green-600 flex-shrink-0" />
@@ -811,7 +811,7 @@ export default function LandingPage({ onStartSurvey }: LandingPageProps) {
               </div>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• 주말 2일 집중 과정 (토요일, 일요일)</li>
-                <li>• 수업 시간: 오전 10시~오후 6시 (각 8시간)</li>
+                <li>• 수업 시간: 오전 10시~오후 10시 (각 12시간)</li>
                 <li>• 일정 선택: 11월 15일-16일 / 22일-23일 / 29일-30일</li>
                 <li>• 시청역 도보 5분 거리</li>
                 <li>• 일정별 최대 4명씩 초소수 정예 진행</li>

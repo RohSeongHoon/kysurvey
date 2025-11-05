@@ -29,7 +29,7 @@ export default function IntroStep({ onNext }: IntroStepProps) {
         <div className="bg-gray-50 p-4 rounded-lg space-y-2">
           <div className="flex items-center space-x-2">
             <span className="text-green-600">✔️</span>
-            <span>주말 2일 집중 과정 (토-일 10:00-18:00)</span>
+            <span>주말 2일 집중 과정 (토-일 10:00-22:00)</span>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-green-600">✔️</span>
