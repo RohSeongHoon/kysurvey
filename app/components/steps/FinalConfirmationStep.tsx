@@ -27,8 +27,7 @@ export default function FinalConfirmationStep({
   const depositOptions = [{ value: "연락 가능", label: "연락 가능" }]
 
   const mediaConsentOptions = [
-    { value: "동의합니다", label: "동의합니다" },
-    { value: "동의하지 않습니다", label: "동의하지 않습니다" }
+    { value: "동의합니다", label: "동의합니다" }
   ]
 
   const validateForm = () => {
