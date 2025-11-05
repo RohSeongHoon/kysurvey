@@ -26,11 +26,20 @@ export default function FinalConfirmationStep({
 
   const depositOptions = [{ value: "연락 가능", label: "연락 가능" }]
 
+  const mediaConsentOptions = [
+    { value: "동의합니다", label: "동의합니다" },
+    { value: "동의하지 않습니다", label: "동의하지 않습니다" }
+  ]
+
   const validateForm = () => {
     const newErrors: { [key: string]: string } = {}
 
     if (!surveyData.depositAgreement) {
       newErrors.depositAgreement = "개별 연락 가능 여부를 선택해주세요."
+    }
+
+    if (!surveyData.agreeNotice) {
+      newErrors.agreeNotice = "홍보 활용 동의 여부를 선택해주세요."
     }
 
     setErrors(newErrors)
@@ -56,6 +65,7 @@ export default function FinalConfirmationStep({
             scheduleDate: surveyData.scheduleDate,
             depositAgreement: surveyData.depositAgreement,
             skills: surveyData.skills,
+            agreeNotice: surveyData.agreeNotice,
           }),
         })
 
@@ -99,6 +109,20 @@ export default function FinalConfirmationStep({
           placeholder="Figma, Photoshop, HTML/CSS 등"
           rows={3}
         />
+
+        <div>
+          <RadioGroup
+            label="홍보 활용 동의"
+            required
+            options={mediaConsentOptions}
+            value={surveyData.agreeNotice}
+            onChange={(value) => updateSurveyData({ agreeNotice: value })}
+            error={errors.agreeNotice}
+          />
+          <p className="text-sm text-gray-600 mt-2">
+            해당 결과물은 사진이나 영상 홍보용으로 사용될 수 있습니다.
+          </p>
+        </div>
       </div>
 
       <div className="mt-8 flex justify-between">
