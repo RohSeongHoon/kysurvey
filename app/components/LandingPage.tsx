@@ -486,7 +486,7 @@ export default function LandingPage({ onStartSurvey }: LandingPageProps) {
               </div>
               <div className="flex items-center gap-3">
                 <CircleCheckBig className="size-5 text-green-600 flex-shrink-0" />
-                <p className="text-gray-700">수강료 <span className="font-bold text-green-600">0원 (무료)</span></p>
+                <p className="text-gray-700">수강료 <span className="line-through text-gray-400">20만원</span> → <span className="font-bold text-green-600">0원</span> <span className="text-sm text-orange-600">(11월,12월 한정)</span></p>
               </div>
               <div className="flex items-center gap-3">
                 <CircleCheckBig className="size-5 text-green-600 flex-shrink-0" />
@@ -815,7 +815,7 @@ export default function LandingPage({ onStartSurvey }: LandingPageProps) {
                 <li>• 일정 선택: 11월 15일-16일 / 22일-23일 / 29일-30일</li>
                 <li>• 시청역 도보 5분 거리</li>
                 <li>• 일정별 최대 4명씩 초소수 정예 진행</li>
-                <li>• 수강료: <span className="font-bold text-green-600">0원 (무료)</span></li>
+                <li>• 수강료: <span className="line-through text-gray-400">20만원</span> → <span className="font-bold text-green-600">0원</span> <span className="text-sm text-orange-600">(11월,12월 한정)</span></li>
               </ul>
             </Card>
 

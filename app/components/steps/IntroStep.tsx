@@ -33,7 +33,7 @@ export default function IntroStep({ onNext }: IntroStepProps) {
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-green-600">✔️</span>
-            <span>수강료 <span className="font-bold text-green-600">0원 (무료)</span></span>
+            <span>수강료 <span className="line-through text-gray-400">20만원</span> → <span className="font-bold text-green-600">0원</span> <span className="text-sm text-orange-600">(11월,12월 한정)</span></span>
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-green-600">✔️</span>
