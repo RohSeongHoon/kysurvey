@@ -14,6 +14,7 @@ export interface SurveySubmission {
   timeSlot?: string
   depositAgreement?: string
   skills?: string
+  agreeNotice?: string
 }
 
 export async function submitToNotion(data: SurveySubmission) {

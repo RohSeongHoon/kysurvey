@@ -61,7 +61,7 @@ export default function FinalConfirmationStep({
             reasonOther: surveyData.reasonOther,
             level: surveyData.level,
             appIdea: surveyData.appIdea,
-            scheduleDate: surveyData.scheduleDate,
+            timeSlot: surveyData.scheduleDate,
             depositAgreement: surveyData.depositAgreement,
             skills: surveyData.skills,
             agreeNotice: surveyData.agreeNotice,
