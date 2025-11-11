@@ -45,8 +45,8 @@ export default function CourseQuestionsStep({
   ];
 
   const scheduleDateOptions = [
-    { value: "11월 15일-16일 (토-일)", label: "11월 15일-16일 (토-일)" },
-    { value: "11월 29일-30일 (토-일)", label: "11월 29일-30일 (토-일)" },
+    { value: "11월 15일-16일 (토-일) 2명", label: "11월 15일-16일 (토-일) 2명" },
+    { value: "11월 29일-30일 (토-일) (마감)", label: "11월 29일-30일 (토-일) (마감)" },
   ];
 
   const validateForm = () => {
