@@ -5,6 +5,7 @@ import React from "react";
 interface RadioOption {
   value: string
   label: string
+  disabled?: boolean
 }
 
 interface RadioGroupProps {
@@ -27,15 +28,16 @@ export default function RadioGroup({ label, options, value, onChange, required =
       )}
       <div className="space-y-2">
         {options.map((option) => (
-          <label key={option.value} className="flex items-center space-x-3 cursor-pointer">
+          <label key={option.value} className={`flex items-center space-x-3 ${option.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}>
             <input
               type="radio"
               value={option.value}
               checked={value === option.value}
               onChange={(e) => onChange(e.target.value)}
-              className="w-4 h-4 text-black border-gray-300 focus:ring-black focus:ring-2"
+              disabled={option.disabled}
+              className="w-4 h-4 text-black border-gray-300 focus:ring-black focus:ring-2 disabled:cursor-not-allowed"
             />
-            <span className="text-sm text-gray-700">{option.label}</span>
+            <span className={`text-sm ${option.disabled ? 'text-gray-400 line-through' : 'text-gray-700'}`}>{option.label}</span>
           </label>
         ))}
       </div>
